@@ -1,7 +1,8 @@
 import React from "react";
-import RightArrowIcon from "../../icons/RightArrowIcon";
 import PlugIcon from "../../icons/PlugIcon";
 import PenIcon from "../../icons/PenIcon";
+import CloudList from "./leftNavbarComponents/CloudList";
+import ArrowIcon from "../../icons/ArrowIcon";
 
 export default function LeftNavbar() {
   return (
@@ -23,8 +24,8 @@ export default function LeftNavbar() {
           </span>
         </div>
         <div className="pl-3 flex items-center ">
-          <span>
-            <RightArrowIcon />
+          <span style={{ transform: "rotate(90deg)" }}>
+            <ArrowIcon />
           </span>
         </div>
       </div>
@@ -62,29 +63,32 @@ export default function LeftNavbar() {
       {/* section two end here */}
       <div className="pl-[20px]">
         <div className="flex flex-row">
-          <div className="font-semibold py-2 ">
-            Cloud Storage
-          </div>
+          <div className="font-semibold py-2 ">Cloud Storage</div>
           <div className="grow items-center justify-end flex">
-            <div className="h-[1px] w-[130px] bg-[#E9EDF2]"/>
+            <div className="h-[1px] w-[130px] bg-[#E9EDF2]" />
           </div>
         </div>
         <div>
-
-
-          <div>cloud 1</div>
-          <div>cloud 2</div>
-          <div>cloud 3</div>
-
-
-
-
+          <CloudList />
         </div>
-        <div>view more</div>
+        <div className="flex flex-row gap-2 py-4 pl-2">
+          <span
+            className="relative bottom-1 cursor-pointer "
+            style={{ transform: "rotate(180deg)" }}
+          >
+            <ArrowIcon />
+          </span>
+          <span className="font-medium text-xs cursor-pointer">View More</span>
+        </div>
       </div>
 
-      <div>
-        <div>shared</div>
+      <div className="pl-[20px]">
+        <div className="flex flex-row">
+          <div className="font-semibold py-2 ">Shared</div>
+          <div className="grow items-center justify-end flex">
+            <div className="h-[1px] w-[130px] bg-[#E9EDF2]" />
+          </div>
+        </div>
       </div>
     </div>
   );
