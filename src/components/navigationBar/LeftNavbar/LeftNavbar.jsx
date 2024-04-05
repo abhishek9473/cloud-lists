@@ -61,14 +61,14 @@ export default function LeftNavbar() {
         </span>
       </div>
       {/* section two end here */}
-      <div className="pl-[20px]">
+      <div className="pl-[20px] ">
         <div className="flex flex-row">
           <div className="font-semibold py-2 ">Cloud Storage</div>
           <div className="grow items-center justify-end flex">
-            <div className="h-[1px] w-[130px] bg-[#E9EDF2]" />
+            <div className="h-[1px] w-[120px] bg-[#E9EDF2]" />
           </div>
         </div>
-        <div>
+        <div className=" pr-2" >
           <CloudList />
         </div>
         <div className="flex flex-row gap-2 py-4 pl-2">

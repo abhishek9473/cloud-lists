@@ -7,8 +7,8 @@ export default function UseIndicator({ bgcolor, totalStorage, usedStorage }) {
     <div
       style={{
         height: "8px",
-        width: "200px",
-        backgroundColor: `rgba(${red},${green},${blue},0.5)`,
+        width: "180px",
+        backgroundColor: `rgba(${red},${green},${blue},0.3)`,
         borderRadius: 40,
       }}
     >
