@@ -35,11 +35,12 @@ export default function FolderList() {
         </span>
       </div>
 
-      <div className="flex flex-row pt-4 ">
-        {foldersName?.map((item, i) => (
+      <div className="flex justify-between flex-row pt-4 ">
+      <div className="flex  w-[95%] " >
+       {foldersName?.map((item, i) => (
           <div
             key={i}
-            className="w-[210px] h-[40px] px-2 rounded bg-white mr-4 flex justify-between items-center "
+            className="w-1/3 h-[40px] px-2 rounded bg-white mr-4 flex justify-between items-center "
           >
             <span className="flex flex-row gap-2 items-center">
               <span>
@@ -53,6 +54,7 @@ export default function FolderList() {
             </span>
           </div>
         ))}
+       </div>
 
         <div className="bg-black w-[30px] flex justify-center rounded ">
           <span className="flex items-center rotate-90 ">

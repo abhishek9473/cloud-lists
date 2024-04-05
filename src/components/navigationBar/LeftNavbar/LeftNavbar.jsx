@@ -19,7 +19,7 @@ export default function LeftNavbar() {
             />
           </span>
           <span className="w-10 h-10 bg-white bg-no-repeat border border-[#E9EDF2] rounded-lg opacity-100" />
-          <span className="h-5 opacity-100 text-base font-semibold">
+          <span className="h-5 opacity-100 text-base">
             Company Name
           </span>
         </div>
