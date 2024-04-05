@@ -1,4 +1,5 @@
 import LeftNavbar from "./components/navigationBar/LeftNavbar/LeftNavbar";
+import Navbar from "./components/navigationBar/navbar/Navbar";
 import RightNavbar from "./components/navigationBar/rightNavbar/RightNavbar";
 import Mainpage from "./components/pageComponents/homepage/Mainpage";
 
@@ -10,9 +11,11 @@ function App() {
           <LeftNavbar />
         </div>
         <div className="grow">
-          <nav className="bg-gray-300 h-12">Navbar</nav>
+          <nav className="bg-gray-300 h-12">
+            <Navbar />
+          </nav>
           <div className="bg-[#F2F5F8]">
-            <Mainpage/>
+            <Mainpage />
           </div>
         </div>
         <div className="w-[275px]">
